@@ -14,10 +14,6 @@ pub fn main() !void {
 
         raylib.ClearBackground(raylib.RAYWHITE);
 
-        // raygui button drawing
-        if (raylib.GuiButton(raylib.Rectangle{ .height = 350, .width = 200, .x = 100, .y = 40 }, "PRESS ME") > 0) {
-            try std.io.getStdOut().writeAll("Button pressed!\n");
-        }
         raylib.EndDrawing();
     }
 
